@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>Argalis | Contact</title>
+        <link rel="stylesheet" type="text/css" href="style/styleMain.css">
+        <link rel="icon" 
+      type="image/png" 
+      href="images/pearFavicon-01.png">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <a href="index.html">
+                <figure>    
+                <img  id="logo" src="images/logoSmall.png" alt="The logo">
+                </figure>
+                </a>
+                <h3>You want to get in touch? Well, you have come to the right place friend!</h3>
+            </header>
+            <nav>
+                <ul>
+                    <li><div id="button1" class="navButton"><a href="aboutMe.html">About me</a></div></li>
+                    <li><div id="button2" class="navButton"><a href="projects.html">Projects</a></div></li>
+                    <li><div id="button3" class="navButton"><a class="activePage">Contact</a></div></li>      
+                </ul>
+            </nav>
+            
+            <main>
+               <div id="map">
+                </div>
+                                   
+                    <div class="contactInfo">
+                        
+                        <h1>Office Den Haag</h1>
+                        <p>LUX Lab, Sl6.37</p>
+                        <p>Johanna Westerdijkplein 75</p>
+                        <p>Den Haag, Netherlands</p>
+                        <p>oskars@argalis.lv</p>
+                        <p>+31 6 1234 4321</p>                    
+                    </div>
+                
+                
+                
+               <script src="scripts/main.js"></script> 
+                <script>
+      function initMap() {
+        var hhs = {lat: 52.067274, lng: 4.324386};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: hhs
+        });
+        var marker = new google.maps.Marker({
+          position: hhs,
+          map: map
+        });
+      }
+    </script>
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmo2nkJizImx7Q7NyWERooAHqRXh0xA9M&callback=initMap">
+    </script>
+                
+        <div class="form">
+            <h1 class="headlineLeft">Send in your suggestions for home page subtitle</h1>
+        <form>
+          <p>Your name, burh</p><br>
+          <input type="text" name="firstname"><br>
+            <p>Your suggestion, bruh</p><br> 
+            <textarea name="message" rows="10" cols="50"></textarea><br>
+            <button type="button"  onclick="alert('your suggestion has been submited')">Submit</button>
+            
+        </form>      
+        </div> 
+            
+            </main>
+        
+         <footer>
+            <div class="footContainer">
+                <p>©Oskars K. Ārgalis 2017, All Rights Reserved</p>
+            </div>
+        </footer>
+        </div>
+        
+        
+     
+   
+    </body>
+</html>
